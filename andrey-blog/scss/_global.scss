@@ -1,0 +1,76 @@
+body {
+    color: #fff;
+    background-color: #403f3c;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+ul,
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.main-container {
+    max-width: 1334px;
+    margin: 0 auto;
+}
+
+.btn {
+    background: #32c79e;
+    cursor: pointer;
+    border: none;
+    border-radius: 52px;
+    transition: all 0.5s;
+    &:hover {
+        filter: drop-shadow(0px 0px 20px rgba(50, 199, 158, 0.5));
+    }
+}
+
+.see-more-btn {
+    padding: 23px 25px 23px 41px;
+
+    margin-left: 24px;
+    border-radius: 69px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    border: 5px solid #32c79e;
+    background-color: transparent;
+    color: #ffffff;
+    max-height: 285px;
+    transition: all 0.5s;
+    &:hover {
+        border: 5px solid #fff;
+        color: #32c79e;
+        background-color: #fff;
+    }
+}
+
+.btn-up {
+    position: fixed;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 5%;
+    bottom: 5%;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    &:hover {
+        background: #32c79e;
+    }
+}
+.btnUp--active {
+    visibility: visible;
+    opacity: 1;
+}

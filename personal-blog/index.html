@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-content">
+        <aside class="aside">
+            <div class="container-aside">
+                <img class="aside-top__avatarimg" src="./images/aside/avatar.png" alt="">
+                <div class="aside__block-about">
+                    <h5 class="block-about__title">Дмитрий Валак</h5>
+                    <p class="block-about__text">блог front-end разработчика</p>
+                    <div class="block-about__social">
+                        <a href="" class="block-about__social-link">
+                            <img class="block-about__social-item" src="./images/aside/instagram.svg" alt="">
+                        </a>
+                        <a href="" class="block-about__social-link">
+                            <img class="block-about__social-item" src="./images/aside/vk.svg" alt="">
+                        </a>
+                        <a href="" class="block-about__social-link">
+                            <img class="block-about__social-item" src="./images/aside/pinterest.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <span class="aside__line"></span>
+                <p class="aside__aboutme">
+                    Front-end разработчик. Практик верстки сайтов.
+
+                    Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000
+                    часов
+                    в создании сайтов различной сложности.
+                </p>
+                <span class="aside__line"></span>
+                <div class="aside__buttons">
+                    <button class="aside__buttons-myworks" type="button">
+                        Мои работы
+                    </button>
+                    <button class="aside__buttons-sendme" type="button">
+                        Написать мне
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <div class="main-content__container">
+            <div class="container">
+                <header class="header">
+                    <div class="burger-menu__wrapper">
+                        <button class="menu-btn">
+                            <span></span>
+                        </button>
+                        <div class="burger-menu burger-menu--active">
+                            <div class="burger-menu__about">
+                                <img class="burger-menu__about-img" src="./images/avatar-small.png" alt="">
+                                <h5 class="burger-menu__about-title">Дмитрий Валак</h5>
+                                <p class="burger-menu__about-subtitle">блог front-end разработчика</p>
+                            </div>
+                            <span class="aside__line"></span>
+                            <ul class="burger-menu__nav">
+                                <li class="burger-menu__item">
+                                    Статьи
+                                    <ul>
+                                        <a href="" class="burger-menu__link">
+                                            <li>Создание сайтов</li>
+                                        </a>
+                                        <a href="" class="burger-menu__link">
+                                            <li>Интернет-маркетинг</li>
+                                        </a>
+                                        <a href="" class="burger-menu__link">
+                                            <li>Продвижение видео</li>
+                                        </a>
+                                    </ul>
+                                </li>
+
+                                <a href="" class="burger-menu__link">
+                                    <li class="burger-menu__item">
+                                        Обо мне
+                                    </li>
+                                </a>
+                                <a href="" class="burger-menu__link">
+                                    <li class="burger-menu__item">
+                                        Реклама
+                                    </li>
+                                </a>
+                                <a href="" class="burger-menu__link">
+                                    <li class="burger-menu__item">
+                                        Профиль
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__wrapper">
+                        <nav class="header__top">
+                            <ul class="header__menu">
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Главная</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Статьи</a>
+                                    <div class="header__dropdown-content">
+                                        <a href="#">Создание сайтов</a>
+                                        <a href="#">Интернет-маркетинг</a>
+                                        <a href="#">Продвижение видео</a>
+                                    </div>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Обо мне</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Реклама</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Профиль</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <input class="header__input" type="text" placeholder="Поиск по блогу">
+                    </div>
+                </header>
+            </div>
+            <main class="main">
+                <div class="container">
+                    <div class="page-wrapper">
+                        <div class="modal-bg">
+                            <div class="modal">
+                                <div class="modal__wrapper modal__wrapper-block">
+                                    <button class="modal__close">
+                                        <image src="./images/cancel.svg" frameborder="0">
+                                    </button>
+                                    <div class="modal__inputs">                                        
+                                        <input class="modal__name modal__input" type="text" placeholder="Имя">
+                                        <input class="modal__email modal__input" type="email" placeholder="Ваш e-mail">
+                                        <input class="modal__text modal__input" type="text" placeholder="Текст сообщения">
+                                        <button class="modal__btn">Отправить</button>
+                                    </div>
+                                    <div class="modal__info-block">
+                                        <a class="modal__info" href="email:info@mywebsite.ru">
+                                            mail: <span> info@mywebsite.ru</span>
+                                        </a>
+                                        <a class="modal__info" href="tel:943-232-856-22">
+                                            тел: <span> +943-232-856-22</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stories">
+                            <div class="stories__item">
+                                <p class="stories__item-title">Отдыхаю на природе</p>
+                                <img class="stories__item-img" src="./images/stories/1.png" alt="">
+                                <p class="stories__item-date">21.09.2020</p>
+                            </div>
+                            <div class="stories__item">
+                                <p class="stories__item-title">
+                                    Заканчиваю
+                                    сложный проект
+                                </p>
+                                <img class="stories__item-img" src="./images/stories/2.png" alt="">
+                                <p class="stories__item-date">15.09.2020</p>
+                            </div>
+                            <div class="stories__item">
+                                <p class="stories__item-title">Переехал в новую
+                                    квартиру</p>
+                                <img class="stories__item-img" src="./images/stories/3.png" alt="">
+                                <p class="stories__item-date">11.09.2020</p>
+                            </div>
+                            <div class="stories__item">
+                                <p class="stories__item-title">Осень пришла!</p>
+                                <img class="stories__item-img" src="./images/stories/4.png" alt="">
+                                <p class="stories__item-date">28.08.2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-wrapper">
+                    <div class="send-something">
+                        <input class="send-something__input" type="text" placeholder="Напишите что-нибудь">
+                        <div class="send-something__items">
+                            <a href="" class="send-something__send-link">
+                                <img class="send-something__photo" src="./images/articles/photo-btn.png" alt="">
+                            </a>
+                            <a href="" class="send-something__send-link">
+                                <img class="send-something__send" src="./images/articles/send-btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="page-comments">
+                        <p class="page-comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Elementum
+                            volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor
+                            orci
+                            auctor
+                            in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                            volutpat massa. Egestas ornare vel volutpat.</p>
+                        <p class="page-comments__date">21.06.2020</p>
+                    </div>
+
+                    <div class="article-block">
+                        <div class="article-block__images">
+                            <img class="article-block__images-img" src="./images/articles/1.png" alt="">
+                        </div>
+                        <div class="article-block__wrapper">
+                            <a href="" class="article-block__title-link">
+                                <h4 class="article-block__title"> код быстро и безболезненно?</h4>
+                            </a>Как писать
+                            <a href="" class="article-block__text-link">
+                                <p class="article-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit.
+                                    Sagittis
+                                    porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu
+                                    auctor
+                                    nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+                            </a>
+                            <a href="" class="article-block__date-link">
+                                <p class="article-block__date">21.06.2020</p>
+                            </a>
+                            <a href="" class="article-block__subarticle-link">
+                                <p class="article-block__subarticle">создание сайтов</p>
+                            </a>
+                            <a href="" class="article-block__btn-link">
+                                читать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article-block">
+                        <div class="article-block__wrapper">
+                            <div class="article-block__images">
+                                <a class="article-block__images-popup" href="#">
+                                    <img class="article-block__images-popup-img" src="./images/articles/2.png" alt="">
+                                    <img class="article-block__images-popup-play" src="./images/articles/play.svg"
+                                        alt="">
+                                </a>
+
+                            </div>
+                            <a href="" class="article-block__title-link">
+                                <h4 class="article-block__title">Купил новый ноутбук за 150 000 руб</h4>
+                            </a>
+                            <a href="" class="article-block__date-link">
+                                <p class="article-block__date">21.06.2020</p>
+                            </a>
+                            <a href="" class="article-block__subarticle-link">
+                                <p class="article-block__subarticle">оставить комментарий</p>
+                            </a>
+                            <a href="" class="article-block__btn-link">
+                                оставить комментарий
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article-block article-block-bottom">
+                        <div class="article-block__images">
+                            <img class="article-block__images-img" src="./images/articles/3.png" alt="">
+                        </div>
+                        <div class="article-block__wrapper">
+                            <a href="" class="article-block__title-link">
+                                <h4 class="article-block__title">Как я сходил на FrontEnd Conf 2021</h4>
+                            </a>
+
+                            <a href="" class="article-block__text-link">
+                                <p class="article-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit.
+                                    Sagittis
+                                    porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu
+                                    auctor
+                                    nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+                            </a>
+                            <a href="" class="article-block__date-link">
+                                <p class="article-block__date">21.06.2020</p>
+                            </a>
+                            <a href="" class="article-block__subarticle-link">
+                                <p class="article-block__subarticle">создание сайтов</p>
+                            </a>
+                            <div class="article-block__subarticle-decor"></div>
+                            <a href="" class="article-block__btn-link">
+                                читать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="page-swither">
+                        <div class="container">
+                            <div class="page-switcher__items">
+                                <button class="page-switcher__btn"> </button>
+                                <button class="page-switcher__btn">1</button>
+                                <button class="page-switcher__btn page-switcher__btn--active">2</button>
+                                <button class="page-switcher__btn">3</button>
+                                <button class="page-switcher__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+    <footer class="footer">
+
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
