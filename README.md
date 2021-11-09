@@ -23,7 +23,7 @@
     **https://www.youtube.com/c/BrainsCloud/videos** - вёрстка и немного полезной инфы
     **https://www.youtube.com/channel/UCeObZv89Stb2xLtjLJ0De3Q** - тут интервьюхи
 
-    Где-то плачет один Хауди, когда его не упоминают(( :confused:
+    Где-то плачет один Хауди, когда его не упоминают((
 
 ## practice:
 **https://codepen.io/**
