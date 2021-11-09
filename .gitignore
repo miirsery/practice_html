@@ -1,2 +1,3 @@
 *.fig
+*.info.fig
 node_modules
