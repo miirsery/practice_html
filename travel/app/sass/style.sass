@@ -1,0 +1,206 @@
+@import "fonts"
+@import "vars"
+@import "global"
+@import "reset"
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 3.5rem 0 8.125rem 0
+    position: relative
+    z-index: 10
+    &__logo
+        background-image: url('../images/logo.svg')
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        margin-right: 13.75em
+        width: 115px
+        height: 34px
+
+.nav
+    &__menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__menu-item
+        margin-right: 4rem
+    &__menu-link
+        color: #212832
+        line-height: 120%
+        font-size: 1.1em
+        @extend %title-top-regular
+
+.authorisation
+    align-items: center
+    display: flex
+    &__btn
+        display: block
+        font-weight: 500
+        font-size: 1.1em
+        @extend %title-top-medium
+        color: #212832
+        &:hover
+            border: 1px solid #212832
+            border-radius: 5px
+    &__login
+        margin-right: 3.25rem
+.switch-language
+    @extend %title-top-regular
+    line-height: 120%
+    font-size: 1.1em
+    text-transform: uppercase
+    border: none
+    option
+        @extend %title-top-regular
+        line-height: 120%
+        font-size: 1.1em
+        text-transform: uppercase
+.top-wrapper
+    min-height: 100vh
+    &__img
+        background-image: url(../images/traveller1.png)
+        background-position: 46vw 9.75rem
+        background-repeat: no-repeat
+        background-size: 784px 764px
+        z-index: 1
+
+// .top
+//     background-image: url(../images/decore.svg)
+//     background-position: center top
+//     background-repeat: no-repeat
+//     background-size: contain
+//     position: relative
+//     z-index: -1
+.hero
+    padding-bottom: 10vh
+    &__left
+        max-width: 545px
+
+    &__title
+        @extend %title-volkhov-bold
+        color: #181E4B
+        font-size: 5.25rem
+        line-height: 5.5rem
+        margin-bottom: 1.5rem
+    &__subtitle
+        @extend %title-poppins-bold
+        text-transform: uppercase
+        color: #DF6951
+        font-size: 1.25rem
+        margin-bottom: 1.875rem
+    &__undertitle
+        @extend %title-poppins-medium
+        font-size: 1rem
+        line-height: 1.85rem
+        margin-bottom: 2.125rem
+.hero
+    font-size: 16px
+    &__buttons
+        display: flex
+        align-items: center
+
+    &__buttonfind
+        @extend %title-top-medium
+        display: block
+        padding: 1.1em 1.625em
+        background-color: #F1A501
+        box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15)
+        border-radius: 10px
+        margin-right: 6.5rem
+        font-size: 1.1rem
+        line-height: 1.25rem
+        color: #fff
+    &__buttonplay
+        @extend %title-top-medium
+        border: none
+        background-color: transparent
+        position: relative
+        cursor: pointer
+        color: #686D77
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: -73px
+            width: 52px
+            height: 52px
+            background-color: #DF6951
+            border-radius: 50%
+            transform: translateY(-50%)
+
+.section
+    &__subtitle
+        @extend %title-poppins-bold
+        font-size: 1.1rem
+        line-height: 1.68rem
+        color: #5e6282
+        text-align: center
+    &__title
+        @extend %title-volkhov-bold
+        text-align: center
+        font-size: 3.25rem
+        line-height: 4rem
+        text-transform: capitalize
+        margin-bottom: 6.25rem
+.services
+    margin-bottom: 12.5rem
+    &__items
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__item
+        display: flex
+        align-items: center
+        flex-direction: column
+        position: relative
+        max-width: 180px
+
+    &__item-img
+        max-width: 90px
+        max-height: 90px
+    &__item-imgblock
+        margin-bottom: 120px
+
+    &__item-imgdec,
+    &__item-img
+        position: absolute
+    &__item-img
+        top: 0
+        left: 50%
+
+    &__item-imgdec
+        top: 0
+        left: 50%
+
+    &__item-img-first
+        top: 0
+        left: 50%
+    &__item-imgdec-first
+        top: 25%
+        left: 59%
+        z-index: -1
+
+    &__item-img-second
+        top: 0
+        left: 50%
+        z-index: -1
+    &__item-imgdec-second
+        top: -12%
+        left: 23%
+    &__item-img-fourth
+        top: 0
+        left: 39%
+    &__item-imgdec-fourth
+        top: 13%
+        left: 52%
+        z-index: -1
+    &__item-title
+        color: $color-title
+        font-size: 1.25rem
+        line-height: 1.68rem
+    &__item-subtitle
+        color: $color-subtitle
+        font-size: 1rem
+        line-height: 1.625rem
