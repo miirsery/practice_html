@@ -30,3 +30,7 @@ https://codepen.io/
 https://www.codewars.com/
 
 *Быть может ещё где-то что-то завалялось, буду дополнять...*
+
+
+https://user-images.githubusercontent.com/57665901/145332485-8a1f1b08-3957-49c3-9970-815ee621b63b.mp4
+
