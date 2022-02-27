@@ -1,0 +1,133 @@
+<aside class="aside">
+    <form class="aside__wrapper">
+        <div class="aside__title">Фильтры</div>
+        <div class="aside__field aside__price">
+            <p class="aside__field-title">Стоимость</p>
+            <div class="aside__field-content">
+                <div class="aside__price-block">
+                    <input class="aside__input-price-left" type="text" name="valueLeft">
+                    <input class="aside__input-price-right" type="text" name="valueRight">
+                </div>
+
+                <div class="aside__price-inputs">
+                    <input type="range" name="valueLeft" id="input-left" min="0" max="8000" value="1600">
+                    <input type="range" name="valueRight" id="input-right" min="0" max="8000" value="4000">
+                    <div class="slider">
+                        <div class="track"></div>
+                        <div class="range"></div>
+                        <div class="thumb left"></div>
+                        <div class="thumb right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside__field aside__people">
+            <p class="aside__field-title">Количество человек</p>
+            <div class="aside__field-content">
+                <ul class="aside__people-tabs">
+                    <li class="aside__people-item">
+                        <label for="onePerson">
+                            <input id='onePerson' type="button" class="aside__people-item" value="1чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="two">
+                            <input id='two' type="button" class="aside__people-item" value="2чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="three">
+                            <input id='three' type="button" value="3чел" class="aside__people-item"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="four">
+                            <input id='four' type="button" class="aside__people-item" value="4чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="five">
+                            <input id='five' type="button" class="aside__people-item" value="5чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="six">
+                            <input id='six' type="button" class="aside__people-item" value="6чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="seven">
+                            <input id='seven' type="button" class="aside__people-item" value="7чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="eight">
+                            <input id='eight' type="button" class="aside__people-item" value="8чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="nine">
+                            <input id='nine' type="button" class="aside__people-item" value="9чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="ten">
+                            <input id='ten' type="button" class="aside__people-item" value="10чел"/>
+                        </label>
+                    </li>
+                    <li class="aside__people-item">
+                        <label for="moreTen">
+                            <input id='moreTen' type="button" class="aside__people-item" value="Больше 10 чел."/>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="aside__field aside__place">
+            <p class="aside__field-title">Место</p>
+            <div class="aside__field-content">
+                <div class="aside__place-content">
+                    <div>
+                        <label>
+                            <input type="radio" name='place' value="Abkhazia" id="Abkhazia">
+                            Абхазия
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name='place' value="KrasnayaPolyana" id="KrasnayaPolyana">
+                            Красная поляна
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name='place' value="Sochi" id="Sochi">
+                            Сочи
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name='place' value="Adler" id="Adler">
+                            Адлер
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name='place' value="Astana" id="Astana">
+                            Астана
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside__field aside__duration">
+            <p class="aside__field-title hidden">Длительность</p>
+        </div>
+        <div class="aside__field aside__date">
+            <p class="aside__field-title hidden">Дата</p>
+
+        </div>
+        <button class="aside__button button-small">Показать</button>
+        <button class="aside__button-reset">Сбросить фильтры</button>
+    </form>
+</aside>

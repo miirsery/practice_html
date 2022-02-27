@@ -1,0 +1,42 @@
+.empty-cart
+  position: fixed
+  display: none
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 100
+  &.active
+    display: flex
+  &__close
+    cursor: pointer
+    background-color: transparent
+    border: none
+    display: block
+    margin-left: auto
+
+  &__img
+    img
+      margin-top: 32px
+
+  &__wrapper
+    background-color: #504B4A
+    width: 460px
+    height: 350px
+    border-radius: 10px
+    padding: 20px
+    text-align: center
+
+  &__title
+    margin-top: 15px
+    font-weight: bold
+    font-size: 30px
+    margin-bottom: 43px
+
+  &__button
+    border: none
+    background: $color-accent-gradient
+    padding: 17px 34px
+    cursor: pointer
+    color: #ffffff
+    font-size: 14px
+

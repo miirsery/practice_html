@@ -1,0 +1,31 @@
+html
+  font-size: 16px
+
+body
+  color: #fff
+  @extend %montserrat-regular
+
+a
+  color: #fff
+
+[class*='container']
+  max-width: $width-container
+  margin: 0 auto
+  padding: 0 15px
+
+.title
+  @extend %oswald-bold
+  letter-spacing: 3px
+  color: $color-dark
+  font-size: calc(24px + 24 * (50vw / $width-containernopixel))
+  position: relative
+  padding-bottom: 1.8rem
+
+  &::after
+    content: ''
+    position: absolute
+    height: 2px
+    background-color: $color-dark
+    width: 3%
+    left: 0
+    bottom: 0

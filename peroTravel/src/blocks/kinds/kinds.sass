@@ -1,0 +1,55 @@
+.kinds
+  margin-bottom: 150px
+  &__title
+    margin-bottom: 90px
+
+  &__content
+    display: flex
+    flex-wrap: wrap
+    column-gap: 20px
+    row-gap: 40px
+    margin-bottom: 60px
+
+  &__item
+    flex: 0 0 48%
+    display: flex
+
+    &-img
+      margin-right: 20px
+
+    &-title
+      margin-bottom: 10px
+      font-weight: 700
+      color: $color-blue
+
+    &-text
+      font-weight: 500
+      @include font(14px, 17px)
+      color: $color-black
+
+  &__bottom
+    text-align: center
+    max-width: 550px
+    margin: 0 auto
+
+    &-text
+      font-weight: 500
+      color: $color-black
+      @include font(14px, 17px)
+      margin-bottom: 10px
+
+    &-button
+      max-width: 230px !important
+      margin: 0 auto
+      padding: 16px 72px 16px 52px !important
+      position: relative
+
+      &::after
+        content: ''
+        position: absolute
+        right: 50px
+        top: 50%
+        transform: translateY(-50%)
+        width: 15px
+        height: 8px
+        background: center/ cover no-repeat url('../images/underhero/arrow.svg')

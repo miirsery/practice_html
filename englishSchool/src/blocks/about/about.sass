@@ -1,0 +1,63 @@
+.about
+  &__wrapper
+    padding: 178px 50px 195px 0
+
+  &__title
+    margin-bottom: 66px
+
+  &__content
+    display: flex
+    justify-content: space-between
+
+    &-info
+      max-width: 700px
+
+    &-subtitle
+      font-weight: 600
+      font-size: 24px
+      font-style: normal
+      margin-bottom: 25px
+
+    &-text
+      margin-bottom: 30px
+      @include font(18px, 22px)
+
+  &__experience
+    display: flex
+    flex-direction: column
+
+    &-title
+      margin-bottom: 25px
+      font-weight: 600
+      font-size: 24px
+
+    &-item
+      margin-bottom: 11px
+
+      &::before
+        content: '•'
+        color: $color-accent
+        display: inline-block
+        width: 6px
+        height: 6px
+        margin-right: 14px
+
+  &__content
+    &-img
+      width: 392px
+      height: 587px
+      position: relative
+
+      img
+        height: 100%
+
+      div
+        height: 100%
+        width: 100%
+        border: 17px solid $color-accent
+        position: absolute
+        top: -48px
+        right: -48px
+        z-index: -1
+
+

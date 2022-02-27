@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+<div class="first-view first-view__container">
+    @@include('./blocks/base/header/header.html')
+    @@include('./blocks/base/basebody/basebody.html')
+</div>
+@@include('./blocks/your/your.html')
+@@include('./blocks/choose/choose.html')
+@@include('./blocks/gifts/gifts.html')
+@@include('./blocks/personalized/personalized.html')
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    new Swiper(".choose__swiper", {
+        slidesPerView: 2.2,
+
+        effect: 'coverflow',
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        coverflowEffect: {
+            depth: 0,
+            modifier: 0,
+            slideShadows: false,
+            rotate: 0,
+            stretch: 0
+        }
+    });
+    new Swiper(".personalized__swiper", {
+        slidesPerView: 3,
+        effect: 'coverflow',
+        spaceBetween: 30,
+        grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        coverflowEffect: {
+            depth: 0,
+            modifier: 0,
+            slideShadows: false,
+            rotate: 0,
+            stretch: 0
+        }
+    });
+</script>
+
+
+<script src="./scripts/main.js"></script>
+</body>
+
+</html>

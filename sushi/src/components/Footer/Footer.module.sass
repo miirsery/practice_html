@@ -1,0 +1,48 @@
+@import "./src/style/helps/vars"
+ul[class]
+  list-style: none
+
+.footer
+  &__wrapper
+    display: flex
+    justify-content: space-between
+
+.left,
+.center,
+.right
+  width: 300px
+
+.center,
+.right
+  color: $color-gray
+  line-height: 1.2
+
+.left
+  color: #000
+  margin-bottom: 60px
+
+  &__item:not(:last-child)
+    margin-bottom: 20px
+
+
+.center
+  padding: 0 40px
+  border-right: 1px solid $color-gray
+  border-left: 1px solid $color-gray
+  &__text
+    margin-bottom: 10px
+
+  &__socials
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__item
+    opacity: 0.3
+    transition: opacity 0.3s
+
+    &:hover
+      opacity: 1
+
+.right
+  padding-left: 40px

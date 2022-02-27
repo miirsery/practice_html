@@ -1,0 +1,122 @@
+.last-works
+  min-height: 100vh
+  margin-bottom: calc(150px + 150 * (50vh / $width-containernopixel))
+
+  &__content
+    position: relative
+    margin-top: -25%
+
+  &__wrapper
+    position: relative
+    min-height: 100vh
+    height: auto
+
+
+  &__title
+    margin-bottom: 55px
+
+  &__categories
+    display: flex
+    align-items: center
+
+  &__category
+    color: rgba(37, 37, 37, 0.3)
+    margin-right: calc(6px + 6 * (50vw / $width-containernopixel))
+
+    &--active
+      color: $color-dark
+
+  &__item
+    max-width: 30%
+    height: 590px
+    top: -50%
+    position: relative
+    margin-top: -25%
+
+    &-bottom
+      position: absolute
+      bottom: 30px
+
+    &--photography
+      background: center/ contain no-repeat url('../images/works/bg-1.jpg')
+
+    &--kitten
+      background: center/ contain no-repeat url('../images/works/bg-2.jpg')
+
+    &--groovemade
+      background: center/ contain no-repeat url('../images/works/bg-3.jpg')
+
+    &--apple
+      background: center/ contain no-repeat url('../images/works/bg-4.jpg')
+
+    &-title
+      @extend %oswald-light
+      font-size: calc(24px + 24 * (50vw / $width-containernopixel))
+      color: $color-dark
+      max-width: 300px
+      letter-spacing: 3px
+      position: absolute
+
+    &-titlesmall
+      font-size: 18px
+      color: $color-dark
+      letter-spacing: 1.25px
+
+    &-subtitlesmall
+      font-size: 13px
+      line-height: 177%
+      color: $color-light-gray
+      letter-spacing: 0.8px
+
+    &-btn
+      font-size: 13px
+      letter-spacing: 0.8px
+      color: $color-dark
+      position: relative
+
+
+    &:nth-child(odd)
+      right: -70%
+
+      .last-works__item-title
+        bottom: 9.5rem
+        left: -70%
+
+      .last-works__item-bottom
+        text-align: right
+
+    &:nth-child(even)
+      left: 0
+
+      .last-works__item-title
+        bottom: 9.5rem
+        right: -50%
+
+      .last-works__item-bottom
+        text-align: left
+
+    &:hover
+      transition: all .3s
+
+      .last-works__item-btn
+        &::after
+          transition: all .3s
+          position: absolute
+          content: ''
+          height: 3px
+          background-color: #70BF73
+          width: 110%
+          top: 50%
+          left: -5%
+
+      .last-works__item-title
+        text-decoration: line-through
+        text-decoration-color: #70BF73
+
+  &__bottom
+    position: absolute
+    right: 0
+    bottom: 0
+    color: $color-dark
+    font-size: 13px
+    @extend %oswald-regular

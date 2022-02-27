@@ -1,0 +1,52 @@
+.accent
+  margin-bottom: 128px
+
+  &__title
+    margin-bottom: 90px
+
+  &__item
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 53px
+
+    &-info
+      max-width: 600px
+
+    &-title
+      font-weight: 700
+      font-size: 36px
+      color: $color-accent
+
+    &-text
+      font-weight: bold
+      @include font(24px, 29px)
+      margin-bottom: 140px
+
+    &-img
+      div
+        position: absolute
+        border: 17px solid $color-accent
+        height: 403px
+        width: 403px
+        top: -35px
+        z-index: -1
+        background-color: transparent
+
+    &:nth-child(odd)
+      .accent__item-img
+        img
+          margin-right: 35px
+
+        div
+          right: 0
+
+
+    &:nth-child(even)
+      .accent__item-img
+        img
+          margin-left: 35px
+
+        div
+          left: 0

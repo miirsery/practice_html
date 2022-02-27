@@ -1,0 +1,63 @@
+.comments
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-bottom: 100px
+
+  &__text,
+  &__number
+    font-size: 14px
+    color: #373737
+    line-height: 221%
+    letter-spacing: 0.8px
+    max-width: 735px
+    margin-bottom: 30px
+
+  &__number
+    opacity: .3
+
+  &__who
+    @extend %oswald-regular
+    margin-bottom: 25px
+    font-size: 18px
+    line-height: 1.1px
+    color: $color-dark
+
+    span
+      font-size: 14px
+      @extend %oswald-light
+      line-height: 0.8px
+      color: #b8b8b8
+
+  &__estimation
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &-item
+      color: #b8b8b8
+
+  &__navigation
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #b8b8b8
+    margin-top: 10px
+    position: relative
+
+    &::after
+      position: absolute
+      content: ''
+      width: 50%
+      background-color: #d8d8d8
+      height: 1px
+      top: 40px
+      left: 0
+      right: 0
+      margin: 0 auto
+
+    img
+      cursor: pointer

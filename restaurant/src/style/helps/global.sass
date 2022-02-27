@@ -1,0 +1,41 @@
+html
+  font-size: 16px
+
+body
+  color: #000
+  @extend %montserrat-regular
+  overflow-x: hidden
+
+a
+  color: #fff
+
+[class*=container]
+  max-width: 1140px
+  margin: 0 auto
+  padding: 0 15px
+
+
+.button
+  font-size: 14px
+  font-weight: bold
+  color: #fff
+  background-color: $color-accent
+  cursor: pointer
+  text-transform: uppercase
+
+.flex
+  display: flex
+  align-items: center
+
+  &__column-block
+    flex-direction: column
+
+  &__row-block
+    flex-direction: row
+
+.title
+  font-size: calc(40px + 14 * (40vw / $container-width))
+  color: #000
+
+  span
+    color: $color-accent-dark

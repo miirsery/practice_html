@@ -1,0 +1,107 @@
+.header
+  padding: 22px 0
+  @media (max-width: 1024px)
+    padding: 12px 0
+
+  &__desktop
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media (max-width: 768px)
+      display: none
+
+
+  &__menu
+    display: flex
+    align-items: center
+
+  &__logo
+    margin-right: 20px
+
+  &__item
+    margin-right: clamp(16px, 4vw - 2px, 32px)
+    @media (max-width: 1024px)
+      margin-right: clamp(16px, 4vw - 2px, 24px)
+
+
+  &__link
+    text-decoration: underline
+    text-decoration-color: $color-text-a
+    font-weight: 500
+    font-size: 14px
+    @media (max-width: 1364px)
+      font-size: 12px
+    @media (max-width: 960px)
+      font-size: 11px
+    @media (max-width: 860px)
+      font-size: 9px
+
+  &__call
+    display: flex
+    align-items: center
+    @media (max-width: 1214px)
+      flex-direction: column-reverse
+      text-align: center
+      margin-left: clamp(16px, 4vw, 24px)
+
+
+    &-button
+      color: $color-accent
+      display: block
+      font-weight: 500
+      font-size: 12px
+      padding: 8px 24px
+      border: 2px solid $color-accent
+      border-radius: 10px
+      letter-spacing: 1px
+      @media (max-width: 1364px)
+        padding: 8px 6px
+        font-size: 11px
+      @media (max-width: 1210px)
+        padding: 8px 4px
+        border-radius: 6px
+        max-width: 162px
+        width: clamp(64px, 11vw, 128px)
+        font-size: 9px
+
+    &-phone
+      color: $color-text-a
+      font-size: 14px
+      font-weight: 600
+      @media (max-width: 1214px)
+        margin-bottom: 8px
+        font-size: 12px
+      @media (max-width: 1044px)
+        margin-bottom: 6px
+        font-size: 11px
+
+  &__mobile
+    display: none
+    @media (max-width: 768px)
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-logo
+        width: 64px
+        height: 20px
+
+        svg
+          width: 64px
+          height: 20px
+      &-call
+        display: flex
+        align-items: center
+
+        svg
+          width: 26px
+          height: 26px
+      &-phone
+        font-size: 14px
+        font-weight: 600
+      &-nav
+        opacity: 0
+        visibility: hidden
+        height: 0
+        width: 0
+        display: none
+

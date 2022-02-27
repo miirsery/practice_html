@@ -1,0 +1,92 @@
+.team
+  min-height: 50vh
+  margin-bottom: 284px
+
+  &__title
+    margin-bottom: 100px
+
+  &__wrapper
+    min-height: 50vh
+
+  &__items
+    display: flex
+    justify-content: space-between
+
+  &__item
+    margin-right: 40px
+    position: relative
+    width: 370px
+    height: 400px
+
+    &-bottom
+      transition: all 0.5s
+      position: absolute
+      text-align: center
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      max-height: 3rem
+      background-color: rgba(255, 255, 255, 0.5)
+
+    &-title,
+    &-subtitle
+      @extend %oswald-light
+      font-size: 1.1rem
+      letter-spacing: 1.1px
+      color: $color-dark
+
+    &-title
+      position: relative
+      padding: 15px 0 15px 0
+
+    &-subtitle
+      padding-top: 1.1rem
+
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        width: 15%
+        height: 2px
+        margin: 0 auto
+        background-color: $color-dark
+
+    &-subtitle
+      margin-top: 13px
+
+    &-text
+      font-size: 12px
+      color: $color-gray
+      letter-spacing: 1px
+      padding-top: 12px
+      margin-bottom: 30px
+
+    &-first
+      background: center/ cover no-repeat url('../images/team/1.jpg')
+
+    &-second
+      background: center/ cover no-repeat url('../images/team/2.jpg')
+
+    &-third
+      background: center/ cover no-repeat url('../images/team/3.jpg')
+
+    &-hidden
+      transition: all 0.5s
+      visibility: hidden
+      opacity: 0
+      transform: translateY(-50%)
+      top: 50%
+
+    &:hover
+      .team__item-bottom
+        bottom: 0
+        background-color: rgba(255, 255, 255, 0.9)
+        max-height: 14rem
+
+      .team__item-hidden
+        visibility: visible
+        opacity: 1
+        transform: translateY(0)

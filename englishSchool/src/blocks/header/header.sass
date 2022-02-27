@@ -1,0 +1,60 @@
+.header
+  padding-top: 50px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__menu
+    display: flex
+    align-items: center
+
+  &__item
+    margin-right: clamp(32px, 4vw, 64px)
+
+  &__link
+    font-weight: 400
+    font-style: italic
+    font-size: 18px
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.51))
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      width: 0
+      left: 0
+      bottom: -3px
+      height: 3px
+      background-color: $color-accent
+      transition: width 300ms ease-in-out
+
+    &:hover
+      font-weight: 600
+
+      &::after
+        width: 100%
+
+    &:checked
+      &::after
+        width: 100%
+
+  &__contacts
+    display: flex
+    align-items: center
+
+    &-info
+      display: flex
+      flex-direction: column
+      margin-left: 22px
+
+    &-phone
+      font-size: 18px
+      font-weight: 500
+      margin-bottom: 9px
+      color: #fff
+
+    &-email
+      font-size: 14px
+      color: #898989
+

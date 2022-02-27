@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+@@include('./blocks/base/header/header.html')
+<main>
+    @@include('./blocks/hero/hero.html')
+</main>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 2.5,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 100,
+            depth: 350,
+            modifier: 1,
+            slideShadows: true,
+        },
+    });
+</script>
+<script src="./scripts/main.js"></script>
+</body>
+
+</html>

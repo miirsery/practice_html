@@ -1,0 +1,221 @@
+
+.section
+  &__quote
+    margin-bottom: 1.5rem
+
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__image
+    width: 1000px
+    height: 500px
+    max-width: 70%
+    margin-left: -4vw
+
+  &__images
+    position: relative
+
+
+  &__image-cover
+    position: absolute
+    width: 60%
+    background-color: #fff
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.16)
+    border-radius: 8px
+    padding: 1.8rem
+
+    &-who
+      display: flex
+      align-items: center
+      font-size: 0.9rem
+      color: #152934
+      line-height: 1.3rem
+
+    &-avatar
+      width: 3rem
+      height: 3rem
+
+
+    &-name
+      font-size: 1rem
+      color: $color-titles
+      font-weight: bold
+      line-height: 1.5rem
+
+
+  &__right
+    width: 40%
+
+    &-text
+      margin-top: 1.5rem
+      margin-bottom: 3rem
+
+  &__quote
+    color: $color-titles
+    font-style: italic
+    line-height: 2.2rem
+    font-weight: 400
+
+.thewall
+  margin-top: 9.5vh
+  margin-bottom: 10rem
+
+  &__image
+    background: center/ cover no-repeat url('../images/1.jpg')
+
+  &__right
+    margin-left: -20%
+
+  &__image-cover
+    right: 18rem
+    bottom: -4rem
+
+    &-avatar
+      background: center / contain no-repeat url('../images/avatar-2.png')
+      margin-right: 0.8rem
+
+.model
+  margin-bottom: 9.4rem
+
+  &__images
+    margin-right: -30rem
+
+  &__right
+    margin-right: -20%
+
+  &__image
+    background: center/ cover no-repeat url('../images/2.jpg')
+
+  &__image-cover
+    bottom: -3rem
+    left: -12rem
+
+    &-avatar
+      background: center / contain no-repeat url('../images/avatar-3.png')
+      margin-right: 0.8rem
+
+.future
+  padding-bottom: 12.6rem
+  border-bottom: 1px solid rgba(33, 56, 66, 0.01)
+
+  &__right
+    margin-left: -20%
+
+  &__image
+    background: center / contain no-repeat url('../images/3.jpg')
+
+  &__image-cover
+    right: 18rem
+    bottom: -4rem
+
+    &-avatar
+      margin-right: 0.8rem
+      background: center / contain no-repeat url('../images/avatar-4.png')
+
+.evaluation
+  margin-bottom: 16rem
+
+  &__title
+    margin-top: 9.3rem
+    margin-bottom: 2.75rem
+    max-width: 40vw
+
+  &__items
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__item
+    padding: 27px 42px 0 30px
+    max-width: 11vw
+    position: relative
+
+    &-title
+      font-size: 1.5rem
+      line-height: 142%
+      color: $color-titles
+      margin-bottom: 1.2rem
+
+    &-text
+      color: rgba(33, 56, 66, 0.6)
+      padding-bottom: 2rem
+      line-height: 186%
+      font-weight: 500
+
+  &__button
+    position: absolute
+    bottom: 0
+    transition: all .3s
+
+    &:hover
+      color: $color-active
+
+.make
+  &__title
+    max-width: 60%
+    margin-bottom: 4.2rem
+
+  &__button
+    margin-bottom: 5rem
+
+.footer
+  height: 60vh
+  padding-bottom: 100vh
+  background-color: rgba(79, 85, 61, 1)
+  position: relative
+
+  &__cut
+    position: absolute
+    top: 0
+    height: 10vh
+    left: 0
+    width: 90%
+    background-color: #fff
+
+.footer
+  margin-top: -10rem
+  position: relative
+  z-index: -1
+
+  &__body
+    margin-top: 4rem
+    display: flex
+
+  &__columns
+    display: flex
+    width: 65%
+
+  &__top
+    display: flex
+    align-items: center
+    padding-top: 15rem
+    padding-bottom: 5rem
+    border-bottom: 1px solid #5D6544
+
+    &-title
+      color: $color-text-green
+      margin-bottom: 2rem
+
+    &-subtitle
+      color: #ffffff
+      font-weight: bold
+
+    &-phone
+      margin-right: 7rem
+
+  &__column
+    width: 33%
+
+    &-title
+      text-transform: uppercase
+      color: #ffffff
+      font-weight: 600
+      margin-bottom: 1.8rem
+
+  &__column:last-child
+    border-right: 1px solid #5D6544
+
+  &__item
+    padding-bottom: 1.5rem

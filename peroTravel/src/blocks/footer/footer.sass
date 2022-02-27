@@ -1,0 +1,64 @@
+.footer
+  margin-top: 30px
+  margin-bottom: 30px
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex: 0 0 50%
+    align-items: center
+    color: $color-black
+
+  &__left
+    display: flex
+    align-items: center
+    width: 50%
+
+  &__contacts
+    width: 50%
+
+  &__logo
+    margin-right: clamp(42px, 10vw, 110px)
+
+  &__link
+    color: $color-black
+    font-weight: 500
+    font-size: 14px
+
+    &:not(:last-child)
+      margin-bottom: 8px
+
+  &__contacts
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+  &__contact a
+    display: block
+    font-size: 14px
+    font-weight: 500
+    color: $color-black
+
+    &:not(:last-child)
+      margin-bottom: 8px
+
+  &__contact
+    &-email
+      font-weight: 500
+      font-size: 14px
+      margin-bottom: 20px
+
+    &:first-child
+      margin-right: clamp(42px, 10vw, 110px)
+
+  &__socials
+    display: flex
+    justify-content: flex-start
+
+    a
+      display: block
+
+      &:not(:last-child)
+        margin-right: 12px
+
+      

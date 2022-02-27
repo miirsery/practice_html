@@ -1,0 +1,70 @@
+.header
+    padding-top: 2rem
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+.navigation
+    display: none
+    @media (max-width: 740px)
+        position: relative
+        display: block
+        &__checkbox
+            display: none
+
+        &__button
+            z-index: 2000
+            text-align: center
+            cursor: pointer
+            z-index: 2
+
+        &__background
+            position: absolute
+            width: 40px
+            height: 40px
+            transform: translate(-25%, -95%)
+            border-radius: 50%
+            background-color: #F5F6F7
+            z-index: 1
+            transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1)
+
+        &__icon
+            z-index: 2
+            position: relative
+            &,
+            &::before,
+            &::after
+                width: 18px
+                height: 2px
+                background-color: #36393B
+                display: inline-block
+
+            &::before,
+            &::after
+                content: ""
+                position: absolute
+                left: 0
+                transition: all .2s
+
+            &::before
+                top: -4px
+            &::after
+                top: 4px
+
+        &__button:hover &__icon::before
+            top: -8px
+
+        &__button:hover &__icon::after
+            top: 8px
+
+        &__checkbox:checked + &__button &__icon
+            background-color: transparent
+
+        &__checkbox:checked + &__button &__icon::before
+            top: 0
+            transform: rotate(135deg)
+
+        &__checkbox:checked + &__button &__icon::after
+            top: 0
+            transform: rotate(-135deg)

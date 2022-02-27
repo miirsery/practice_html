@@ -1,0 +1,93 @@
+.faq
+  &__content
+    &-wrapper
+      display: flex
+
+  &__left
+    width: 50%
+
+  &__right
+    width: 50%
+
+    &.map
+      width: 100%
+
+  &__item
+    background-color: rgba(97, 137, 103, 1)
+    max-width: 618px
+    overflow: hidden
+    border-radius: 10px
+
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+    &-title
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 25px 30px 25px 30px
+      border-radius: 10px
+      max-height: 68px
+
+      p
+        font-weight: 500
+        font-size: 18px
+
+    &-img
+      pointer-events: none
+
+      img
+        transition: all 0.3s
+
+
+    &-content
+      background-color: rgba(73, 69, 68, 1)
+      padding: 0
+      transition: opacity 0.5s
+      display: none
+
+      &.active
+        display: block
+        padding: 40px 60px 30px 40px
+        animation: fadeIn 0.5s
+
+  &__bottom
+    margin-top: 30px
+
+    &-top
+      display: flex
+
+    &-graph
+      &-left
+        margin-right: 100px
+
+      &-title
+        margin-bottom: 20px
+
+      &-time
+        margin-bottom: 60px
+
+    &-title
+      font-weight: 700
+      font-size: 22px
+
+    &-subtitle
+      font-size: 22px
+      font-weight: 400
+
+  &__body
+    max-width: 700px
+
+    &-title
+      margin-bottom: 14px
+
+    &-text
+      margin-bottom: 37px
+      line-height: 1.6
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1

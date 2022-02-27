@@ -1,0 +1,164 @@
+.cost
+  margin-bottom: 160px
+  &__wrapper
+    position: relative
+
+  &__content
+    display: flex
+    gap: 22px
+
+  &__title
+    margin-bottom: 102px
+    padding-top: 112px
+
+  &__item
+    flex: 0 0 31%
+
+    padding: 48px 13px 42px 13px
+    border-radius: 16px
+
+    &:nth-child(1)
+      background-color: #F2F4F4
+      height: 654px
+
+    &:nth-child(2)
+      background-color: #F9F4EE
+      height: 654px
+
+    &:nth-child(3)
+      background-color: #F5D9C6
+      height: 700px
+      margin-top: -25px
+
+
+    &-type
+      font-weight: 600
+      font-size: 18px
+      margin-bottom: 29px
+      color: #4a4a4a
+
+    &-price
+      color: #333333
+      font-size: 56px
+      font-weight: bold
+      margin-bottom: 6px
+
+    &-count
+      font-size: 14px
+      color: #838383
+      margin-bottom: 54px
+
+    &-body
+      padding: 0 30.5px
+
+    &-specifications-item
+      position: relative
+      margin-left: 28px
+      margin-bottom: 25px
+
+      &::before
+        @include pseudo-element()
+        left: -28px
+        top: 50%
+        transform: translateY(-50%)
+        background: center/ cover no-repeat url('../images/check.svg')
+        width: 18px
+        height: 18px
+
+    &-additional
+      margin-bottom: 52px
+
+      &-item
+        padding: 6px 5px
+        font-weight: 500
+        font-size: 12px
+        border-radius: 5px
+        border: 1px solid #C2C2C2
+        background-color: #fff
+
+        &.active
+          border: 1px solid $color-accent
+
+        &:hover
+          background-color: #F6F5F5
+
+        &:nth-child(1)
+          max-width: 108px
+
+        &:nth-child(2)
+          max-width: 82px
+
+        &:nth-child(3)
+          max-width: 170px
+
+
+    &-additional-w
+      display: flex
+      justify-content: space-between
+      width: 100%
+
+
+    &-additional-title
+      font-weight: 600
+      font-size: 16px
+      color: #333333
+      margin-bottom: 12px
+
+    &-button
+      padding: 14px 0
+      width: 100%
+
+
+.retouch-modal
+  @include centering
+  background-color: #fff
+  border-radius: 15px
+  padding: 45px
+  display: none
+
+  &.active
+    display: block
+
+  &__title
+    font-weight: 600
+    color: #333333
+    font-size: 36px
+    margin-bottom: 2rem
+
+  form
+    max-width: 420px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    margin: 0 auto
+
+    label
+      display: block
+      width: 100%
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+      font-size: 16px
+      margin-bottom: 8px
+      color: #121621
+      opacity: 0.4
+
+      &::placeholder
+        font-size: 12px
+        font-weight: 600
+        color: #B1B1B1
+        opacity: 0.4
+
+    input
+      display: block
+      width: 100%
+      border-radius: 5px
+      background-color: transparent
+      padding: 18px 0 18px 16px
+      margin-bottom: 2rem
+
+
+  &__button
+    padding: 14px
+    width: 100%

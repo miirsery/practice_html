@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excursions</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+<div class="hero excursions">
+    @@include('./blocks/header/header.html')
+    @@include('./blocks/first-view/first-view-ex.html')
+</div>
+<main class="main container">
+    @@include('./blocks/calendar/calendar.html')
+    @@include('./blocks/filters/filters.html')
+    <div class="excursions__wrapper">
+        @@include('./blocks/aside/aside.html')
+        @@include('./blocks/tours/tours.html')
+    </div>
+</main>
+
+@@include('./blocks/footer/footer.html')
+<script src="./scripts/main.js"></script>
+</body>
+
+</html>

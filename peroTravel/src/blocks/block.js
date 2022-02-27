@@ -1,0 +1,6 @@
+import './popular/popular'
+import './reviews/reviews'
+import './filters/filters'
+import './aside/aside'
+import './tours/tours'
+import './calendar/caledndar'

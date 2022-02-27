@@ -1,0 +1,90 @@
+html
+  font-size: 16px
+
+body
+  color: $color-dark
+  font-family: 'Montserrat', sans-serif
+
+a
+  color: #fff
+
+[class*=container]
+  max-width: 1340px
+  margin: 0 auto
+  padding: 0 30px
+
+.title
+  color: $color-dark
+  font-weight: 800
+  font-size: 48px
+  text-transform: uppercase
+
+#stages_01
+  grid-area: one
+
+#stages_02
+  grid-area: two
+
+#stages_03
+  grid-area: three
+
+#stages_04
+  grid-area: four
+
+#stages_05
+  grid-area: five
+
+#principles_01
+  grid-area: one
+
+#principles_02
+  grid-area: two
+
+#principles_03
+  grid-area: three
+
+#principles_04
+  grid-area: four
+
+#principles_05
+  grid-area: five
+
+button
+  cursor: pointer
+
+.ul
+  &__content
+    display: grid
+    grid-template-areas: 'zero one two' 'three four five'
+    @media (max-width: 1024px)
+      grid-template-areas: 'zero one' 'two three' 'four five'
+
+  &__item
+    gap: 30px
+    max-width: 315px
+
+    &-title
+      font-size: 96px
+      font-weight: bold
+      color: $color-accent
+      @media (max-width: 510px)
+        font-size: 80px
+      @media (max-width: 405px)
+        font-size: 76px
+
+    &-subtitle
+      font-weight: bold
+      font-size: 26px
+      color: $color-dark
+      @media (max-width: 510px)
+        font-size: 20px
+      @media (max-width: 405px)
+        font-size: 16px
+
+    &-text
+      @include font(20px, 26px)
+      font-weight: 500
+      @media (max-width: 510px)
+        font-size: 16px
+      @media (max-width: 405px)
+        font-size: 12px

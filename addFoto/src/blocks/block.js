@@ -1,0 +1,6 @@
+import './works/works'
+import './location/location'
+import './actions/openText'
+import './actions/openModal'
+import './cost/cost'
+import './reviews/reviews'

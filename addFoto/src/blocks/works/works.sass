@@ -1,0 +1,37 @@
+.works
+  margin-bottom: 163px
+
+  &__title
+    padding: 142px 0 80px 0
+
+  &-swiper
+    height: 44vw
+
+.swiper-slide
+  &.works__swiper-slide
+    &.swiper-slide-active
+      transform: scale(1.05) !important
+      transition: all 0.5s
+      height: 518px !important
+
+.swiper-slide
+  &.works__swiper-slide
+    &.swiper-slide-prev
+      transition: all 0.5s ease-in-out
+      transform: scale(0.9)
+      height: 518px !important
+
+.swiper-slide
+  &.works__swiper-slide
+    &.swiper-slide-next
+      transition: all 0.5s ease-in-out
+      transform: scale(0.9)
+      height: 518px !important
+
+.swiper-pagination-bullet-active
+  background: $color-accent !important
+
+.works-button-next
+  right: 25%
+.works-button-prev
+  left: 25%

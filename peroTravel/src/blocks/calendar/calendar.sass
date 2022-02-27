@@ -1,0 +1,72 @@
+.calendar
+  i
+    color: $color-black
+  color: $color-black
+
+  width: 580px
+  height: 456px
+  background-color: $color-gray-D
+  border-radius: 10px
+  padding: 30px
+  display: none
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -140%)
+  z-index: 10
+
+  &.active
+    display: block
+
+  &__date
+    font-weight: 700
+    font-size: 24px
+    color: $color-blue
+    padding: 0 clamp(80px, 7vw, 140px)
+
+  &__month
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 20px
+
+  &__weekdays
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 8px
+
+    div
+      padding: 22px 17px
+      font-size: 18px
+      text-transform: uppercase
+      font-weight: 700
+
+  &__days
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    gap: 10px
+
+    div
+      font-size: 18px
+      font-weight: 500
+      width: 65px
+      height: 34px
+      text-align: center
+      cursor: pointer
+
+
+      &.today
+        background-color: $color-blue
+        color: #fff
+
+
+    &-prev-date,
+    &-next-date
+      color: $color-gray-4
+
+    &-prev-date
+      pointer-events: none
+

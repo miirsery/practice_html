@@ -1,0 +1,28 @@
+.first-view
+  min-height: calc(100vh - 92px)
+
+  &__wrapper
+    min-height: calc(100vh - 92px)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+
+  &-title
+    text-transform: uppercase
+    font-weight: 700
+    @include font(64px, 78px)
+    margin-bottom: 25px
+    max-width: 817px
+    color: #fff
+
+    span
+      color: $color-accent
+
+  &-text
+    color: #fff
+    @include font(24px, 29px)
+    margin-bottom: 100px
+    max-width: 817px
+
+

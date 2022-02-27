@@ -1,0 +1,64 @@
+.lessons
+  background-color: $color-accent
+  min-height: 70vh
+
+  &__wrapper
+    min-height: 70vh
+
+
+  &__title
+    padding-top: 50px
+    margin-bottom: 71px
+    color: #000
+    text-align: center
+
+  &__number
+    font-weight: 800
+    font-size: 96px
+    color: #000000
+    margin: 20px
+    position: relative
+    filter: drop-shadow(7px 7px 6px rgba(0, 0, 0, 0.3))
+
+    &::before
+      content: ''
+      position: absolute
+      left: -35px
+      top: 12px
+      height: 4px
+      width: 64px
+      background-color: #000
+      transform: rotate(131deg)
+
+    &:nth-child(even)
+      margin-left: 40px
+
+    &-arrow
+      &--reverse
+        transform: scale(-1, 1)
+        margin-right: 0
+
+      &--bottom
+        transform: rotate(-10deg)
+
+  &__content
+    &-item
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+      max-width: 70%
+
+      &:nth-child(even)
+        margin-left: auto
+
+  &__text
+    &-title
+      font-size: 24px
+      font-weight: 800
+      color: #000000
+      margin-bottom: 6px
+
+    &-text
+      color: #000000
+      @include font(18px, 21px)
+      max-width: 500px

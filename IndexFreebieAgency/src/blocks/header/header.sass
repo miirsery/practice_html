@@ -1,0 +1,34 @@
+.header
+  padding-top: 80px
+
+.menu
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+
+  &__item
+    position: relative
+
+    &:hover
+      &::after
+        width: 100%
+
+    &::after
+      transition: all .2s
+      content: ''
+      position: absolute
+      right: 0
+      bottom: -4px
+      height: 2px
+      background-color: #4CAF50
+      width: 30%
+
+
+    &:not(:last-child)
+      margin-right: clamp(10px, 2vw, 65px)
+
+
+  &__link
+    color: #ffffff
+    font-size: 0.8rem
+    text-transform: uppercase

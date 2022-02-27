@@ -1,0 +1,59 @@
+.contact
+  margin-bottom: 10px
+  &__wrapper
+    max-width: 1800px
+    margin: 0 auto
+    display: flex
+    justify-content: center
+
+  &__left,
+  &__right
+    width: 50%
+    height: 300px
+
+  &__left,
+  &__right
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+  &__left
+    background-color: #fbfbfb
+    &-img
+      text-align: center
+    &-title
+      text-align: center
+      margin-top: 30px
+      @extend %oswald-regular
+      font-size: 1.5rem
+      letter-spacing: 2.6px
+      color: #373737
+
+    &-subtitle
+      text-align: center
+      margin-top: 1.8rem
+      font-size: 14px
+      letter-spacing: 1.5px
+      color: #373737
+      opacity: 0.8
+
+  &__right
+    background-color: #70BD59
+    &-img
+      text-align: center
+    &-title
+      text-align: center
+      @extend %oswald-regular
+      margin-top: 30px
+      font-size: 1.5rem
+      letter-spacing: 2.6px
+      color: #fff
+
+    &-subtitle
+      text-align: center
+      margin-top: 1.8rem
+      font-size: 14px
+      letter-spacing: 1.5px
+      color: #fff
+      opacity: 0.8

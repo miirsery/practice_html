@@ -1,0 +1,91 @@
+html
+  font-size: 16px
+
+body
+  color: #fff
+  position: relative
+  font-family: 'Montserrat', sans-serif
+
+a
+  color: #fff
+
+[class*=container]
+  max-width: 1150px
+  margin: 0 auto
+  padding: 0 15px
+
+button[class*='button-small'],
+a[class*='button-small']
+  display: block
+  background: $color-grad-blue
+  border: none
+  font-size: 12px
+  font-weight: bold
+  border-radius: 40px
+  padding: 12px 42px
+  color: #fff
+  cursor: pointer
+
+button[class*='button-big'],
+a[class*='button-big']
+  display: block
+  background: $color-grad-blue
+  border: none
+  font-size: 14px
+  font-weight: bold
+  border-radius: 60px
+  padding: 16px 72px
+  color: #fff
+  cursor: pointer
+
+.title
+  font-size: 24px
+  color: $color-blue
+  font-weight: bold
+
+.swiper-wrapper
+  position: relative
+
+.swiper-pagination
+  display: flex
+  margin-top: 62px
+
+.swiper-button-prev,
+.swiper-button-next
+  position: relative
+  top: 0
+  width: auto
+  height: auto
+  display: block
+  left: 0
+  right: 0
+
+.swiper-button-prev
+  margin-right: 38px
+
+.swiper-button-prev::after,
+.swiper-button-next::after
+  content: ''
+
+.swiper-button-disabled
+  opacity: 1 !important
+
+  svg
+    path
+      stroke: #D4D4D4
+
+.swiper-scrollbar
+  position: absolute !important
+  bottom: 27px !important
+  width: calc(100% - 138px) !important
+  left: 138px !important
+  background: $color-gray-4 !important
+
+  &-drag
+    background: $color-blue
+
+.swiper-horizontal > .swiper-scrollbar
+  height: 2px
+
+.sneak
+  display: none

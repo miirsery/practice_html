@@ -1,0 +1,141 @@
+@import "./cold/cold"
+.categories
+  &__menu
+    padding: 28px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__link
+    color: rgba(207, 207, 207, 1)
+    font-weight: 500
+    font-size: 1.1rem
+    position: relative
+    width: 0
+    transition: all 0.3s
+
+    &::after
+      content: ""
+      position: absolute
+      display: block
+      width: 100%
+      height: 2px
+      bottom: -26px
+      left: 0
+      background: #618967
+      box-shadow: 0 5px 12px rgba(114, 164, 121, 0.3)
+      transform: scaleX(0)
+      transition: transform 0.3s ease
+
+    &:hover
+      color: #fff
+
+      &::after
+        transform: scaleX(1)
+
+  &__wrapper
+    position: relative
+
+
+.swiper-slide
+  font-size: 18px
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%)
+  border-radius: 10px
+  height: 400px
+  width: 265px
+  display: flex
+  flex-direction: column
+  position: relative
+  color: #fff
+  text-align: left
+
+  &-title
+    font-size: 1.4rem
+    font-weight: bold
+    margin-bottom: 5px
+
+  &-weight
+    font-size: 12px
+
+  &-description
+    color: #cfcfcf
+    font-size: 13px
+    line-height: 131%
+    margin-bottom: 15px
+
+  &-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &-price
+    font-size: 20px
+    font-weight: 600
+
+  &-button
+    font-size: 14px
+    font-weight: 600
+    cursor: pointer
+    background: $color-accent-gradient
+    color: #fff
+    padding: 13px 18px 14px 19px
+    border-radius: 10px
+    border: none
+    display: flex
+    align-items: center
+
+    img
+      margin-left: 14px
+
+  &-img
+    img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.swiper-slider-body
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 15px 16px 18px 20px !important
+  height: 100%
+
+
+.swiper-slide-count
+  position: absolute
+  right: -14px
+  top: -10px
+  background: $color-accent-gradient
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-content: flex-end
+  align-items: center
+  z-index: 3
+
+
+.in-cart
+  display: none
+
+.category
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+  padding-bottom: 50px
+  &__title
+    margin: 55px 19px 55px 0
+    font-size: 2rem
+    text-transform: uppercase
+    font-weight: bold
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      left: -19px
+      bottom: 0
+      top: 0
+      background: #618967
+      height: 100%
+      width: 4px

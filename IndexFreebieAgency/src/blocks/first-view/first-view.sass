@@ -1,0 +1,67 @@
+.first-view
+  min-height: 90vh
+  display: flex
+
+  &__wrapper
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    background: #000 url('../images/bg-first-view.jpg') no-repeat center / cover
+
+  &__text-wrapper
+    position: relative
+    flex: 1 1 auto
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+  &__bottom
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    bottom: 0
+    padding-bottom: 30px
+    left: 50%
+
+    p
+      @extend %oswald-bold
+      font-size: calc(9px + 9 * (50vw / $width-containernopixel))
+      letter-spacing: 1.1px
+      color: rgba(255, 255, 255, 0.4)
+      &:not(:last-child)
+        margin-right: 9px
+
+    p.active
+      @extend %oswald-bold
+      font-size: calc(18px + 18 * (50vw / $width-containernopixel))
+      letter-spacing: 2.3px
+      color: #fff
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        height: 2px
+        background-color: #4CAF50
+        width: 100%
+        top: 50%
+        left: -2%
+
+  &__title
+    @extend %oswald-medium
+    font-size: calc(34px + 38 * (50vw / $width-containernopixel))
+    font-weight: 500
+    letter-spacing: 4.6px
+    color: #ffffff
+    text-transform: uppercase
+
+    @media (max-width: 767px)
+      font-size: calc(34px + (38 + 38 + 0.7) * ((100vw - 320px) / $width-containernopixel))
+
+  &__subtitle
+    margin-top: 3rem
+    letter-spacing: 1.28px
+    opacity: 0.8
+
+  &__subtitle
+    text-align: center

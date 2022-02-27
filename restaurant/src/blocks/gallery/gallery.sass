@@ -1,0 +1,19 @@
+.gallery
+  margin-bottom: 100px
+
+  &__title
+    text-align: center
+    margin: 100px 0 60px 0
+
+  &__items
+    display: flex
+    gap: 30px
+    flex-wrap: wrap
+
+  &__item
+    @media (max-width: 425px)
+      &-one
+        width: 300px
+
+        img
+          width: 100%

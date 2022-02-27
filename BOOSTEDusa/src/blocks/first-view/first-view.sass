@@ -1,0 +1,36 @@
+.welcome
+  min-width: 100vw
+  min-height: 70vh
+.first-view
+  min-height: calc(100vh - 145px)
+  background: center/ cover no-repeat url('../images/welcome.jpg')
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  &__title
+    font-size: calc(25px + 25 * (50vw / 1400))
+    margin: 50px 0 25px 0
+
+  &__subtitle
+    font-size: calc(7.5px + 7.5 * (50vw / 1400))
+    letter-spacing: 1px
+    margin-bottom: 22px
+
+  &__buttons
+    margin: 0 auto
+    display: flex
+    align-items: center
+    text-align: center
+
+    a
+      display: block
+      margin-right: 12px
+      padding: 5px 20px
+      color: #fff
+      font-size: 15px
+      background-color: #FF4A32
+      border-radius: 35px
+      width: calc(100px + 100 * (70vw / 1400))
+

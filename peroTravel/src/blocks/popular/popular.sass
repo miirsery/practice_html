@@ -1,0 +1,88 @@
+.popular
+  margin-bottom: 150px
+
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 90px
+
+  &__see-more
+    display: block
+    color: $color-black
+    font-size: 12px
+    font-weight: 500
+    text-decoration: underline
+    text-decoration-color: $color-black
+
+  &__content
+    &-tour
+      font-size: 12px
+      font-weight: 500
+      margin-bottom: 4px
+
+    &-title
+      font-size: 13px
+      color: $color-yellow
+      font-weight: bold
+      margin-bottom: 10px
+
+    &-info
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+
+      &-time,
+      &-price
+        position: relative
+        font-weight: 500
+        font-size: 12px
+        margin-left: 1rem
+
+        &::before
+          content: ''
+          position: absolute
+          width: 15px
+          height: 15px
+          top: 50%
+          left: -1rem
+          transform: translateY(-50%)
+
+      &-time
+        margin-right: 2rem
+
+        &::before
+          background: center/ cover no-repeat url('../images/popular/time.svg')
+
+      &-price
+        &::before
+          background: center/ cover no-repeat url('../images/popular/price.svg')
+
+    &-text
+      font-weight: 500
+      @include font(12px, 15px)
+      overflow: hidden
+      text-overflow: ellipsis
+      max-height: 120px
+
+    &-button
+      position: absolute
+      bottom: 42px
+
+.popular-slide
+  height: 500px
+  padding: 210px 16px 42px 16px
+  width: 360px
+  border-radius: 10px
+
+  &-1
+    background: center/ cover no-repeat url('../images/popular/1.jpg')
+
+  &-2
+    background: center/ cover no-repeat url('../images/popular/2.jpg')
+
+  &-3
+    background: center/ cover no-repeat url('../images/popular/3.jpg')
+
+  &-4
+    background: center/ cover no-repeat url('../images/popular/4.jpg')

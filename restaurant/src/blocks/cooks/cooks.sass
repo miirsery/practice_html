@@ -1,0 +1,17 @@
+.cooks
+  margin-bottom: 100px
+
+  &__items
+    display: flex
+    justify-content: space-between
+    @media (max-width: 425px)
+      flex-direction: column
+
+  &__item
+    width: 280px
+    @media (max-width: 779px)
+      width: 210px
+      &.three
+        display: none
+      &.two
+        margin-right: 7rem

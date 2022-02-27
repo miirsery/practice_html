@@ -1,0 +1,68 @@
+.services
+  margin-top: calc(124px + 124 * (50vh / $width-containernopixel))
+  // 248px
+
+  min-height: 50vh
+
+  &__wrapper
+    min-height: 50vh
+
+  &__items
+    display: flex
+    justify-content: space-between
+
+  &__item
+    padding: 50px 50px 35px 40px
+
+    &:not(:last-child)
+      margin-right: 20px
+
+    &-top
+      display: flex
+      justify-content: space-between
+
+    &-title
+      color: $color-dark
+      @extend %oswald-light
+      text-transform: uppercase
+      font-size: calc(10px + 10 * (50vw / $width-containernopixel))
+      padding-bottom: 20px
+      padding-top: 13px
+      position: relative
+      margin-bottom: 1.5rem
+
+      &::after
+        content: ''
+        position: absolute
+        height: 2px
+        background-color: $color-dark
+        width: 40%
+        bottom: 0
+        left: 0
+
+    &-text
+      font-size: 12px
+      line-height: 25px
+      letter-spacing: 1px
+      color: $color-gray
+      margin-bottom: 1.8rem
+
+    &-btn
+      @extend %oswald-light
+      font-size: 10px
+      color: $color-dark
+      opacity: 0.5
+      transition: all .3s
+
+    &:hover
+      transition: all .3s
+      border-bottom: 3px solid #70bf73
+
+      .services__item-btn
+        opacity: 1
+
+    &-decor img
+      padding: 13px
+      border-radius: 50%
+      background: #FFFFFF
+      box-shadow: 0 0 20px #d8d8d8

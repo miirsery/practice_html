@@ -1,0 +1,25 @@
+@import './helps/reset'
+@import './helps/fonts'
+@import './helps/mixins'
+@import './helps/vars'
+@import "./helps/libs"
+@import './helps/global'
+//@import "../../node_modules/font-awesome/scss/font-awesome"
+
+@import '../blocks/block'
+
+.hero
+  &.main-page
+    min-height: 100vh
+    background: center/ cover no-repeat url('../images/hero/bg-hero.jpg')
+
+  &.excursions
+    min-height: 10vh
+    background: center/ cover no-repeat url('../images/bg-excursions.jpg')
+
+.main
+  position: relative
+
+.excursions__wrapper
+  margin-top: 40px
+  display: flex

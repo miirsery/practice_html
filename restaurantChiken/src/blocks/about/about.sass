@@ -1,0 +1,64 @@
+.about
+  min-height: 40vh
+
+  &__wrapper
+    background-color: #232122
+    background-image: url('../images/about/bg-about.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    justify-content: space-between
+
+  &__left
+    width: clamp(225px, 40vw, 563px)
+    padding: 100px 0 0 70px
+
+  &__title
+    font-size: 2rem
+    text-transform: uppercase
+    font-weight: bold
+    margin-bottom: 26px
+
+  &__text
+    font-size: 20px
+    line-height: 125%
+    color: #cfcfcf
+    margin-bottom: 60px
+
+  &__button
+    background: rgba(255, 255, 255, 0.05)
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    border-radius: 10px
+    backdrop-filter: blur(5px)
+    color: #ffffff
+    text-transform: uppercase
+    font-weight: bold
+    @extend %proxima-nova
+
+  &__right
+    max-width: 37%
+    padding: 71px 0
+
+  &__items
+    display: flex
+    flex-wrap: wrap
+    gap: 15px
+
+  &__item
+    width: clamp(120px, calc(50% - 1vw), 228px)
+    height: 228px
+    background-color: rgba(80, 75, 74, 0.9)
+    display: flex
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    align-items: center
+
+    &:hover
+      svg
+        path
+          fill: #79B282
+
+      .about__item-title
+        color: #79B282

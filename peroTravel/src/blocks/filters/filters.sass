@@ -1,0 +1,71 @@
+.filters
+  &__wrapper
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05)
+    border-radius: 10px
+    padding: 60px
+    margin: 0 auto
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__date
+    label
+      pointer-events: none
+
+
+  &__tours
+    display: flex
+    align-items: center
+    max-width: 475px
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      height: 2px
+      width: 100%
+      background-color: $color-gray-4
+
+  &__location
+    &-input
+      background: #FFFFFF
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1)
+      border: none
+      border-radius: 10px
+      height: 50px
+      width: 235px
+      margin-right: 20px
+      padding: 16px 24px
+
+      &::placeholder
+        color: $color-black
+
+  &__tour
+    color: $color-black
+    font-weight: 500
+    font-size: 14px
+    cursor: pointer
+    padding-bottom: 13px
+
+    &:last-child
+      margin-right: 15px
+
+    &:first-child
+      margin-left: 15px
+
+
+    &.active
+      border-bottom: 2px solid $color-blue
+      position: relative
+      z-index: 2
+
+    &:not(:last-child)
+      margin-right: 20px
+
+  &__choice
+    margin-top: 60px
+    display: flex

@@ -1,0 +1,28 @@
+@import "./header/header"
+@import "./first-view/first-view"
+@import "./services/services"
+@import "./catalog/catalog"
+@import "./stages/stages"
+@import "./asks/asks"
+@import "./target/target"
+@import "./principles/principles"
+@import "./footer/footer"
+@import "./modals/modal"
+
+.hero
+  &__wrapper
+    min-height: 70vh
+    background-size: clamp(500px, 60%, 1200px)
+    @media (min-width: 1000px)
+      background: right top no-repeat url('../images/hero/bg-hero.png')
+    @media (max-width: 1366px)
+      background-size: clamp(500px, 60%, 1200px)
+      background-position: 35rem top
+    @media (max-width: 1280px)
+      background-position: 35rem 3rem
+    @media (max-width: 1000px)
+      background: right top/ contain no-repeat url('../images/hero/bg-hero-2.svg')
+    @media (max-width: 768px)
+      background: none
+    @media (max-width: 520px)
+      background: none

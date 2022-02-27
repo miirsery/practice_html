@@ -1,0 +1,223 @@
+.aside
+  &__wrapper
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05)
+    border-radius: 10px
+    width: 295px
+    padding: 25px 35px
+    margin-right: 40px
+
+  &__title
+    font-size: 14px
+    font-weight: bold
+    color: $color-blue
+    margin-bottom: 30px
+
+  &__field
+    padding-bottom: 46px
+    padding-top: 40px
+    border-bottom: 1px solid $color-gray-D
+
+
+  &__price-inputs
+    position: relative
+    width: 100%
+
+    div:first-child
+      display: flex
+
+
+  &__price-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 30px
+    margin-bottom: 30px
+
+    input
+      background: transparent
+      border-radius: 40px
+      border: 1px solid $color-gray-D
+      outline: none
+      padding: 7px 0 8px 16px
+      width: 105px
+
+
+  &__field
+    &-title
+      margin-bottom: 20px
+      font-size: 14px
+      font-weight: bold
+      color: $color-black
+      position: relative
+
+      &::after
+        content: ''
+        position: absolute
+        right: 0
+        top: 50%
+        width: 16px
+        height: 2px
+        border-radius: 5px
+        transform: translateY(-50%)
+        background-color: $color-blue
+
+      &.hidden
+        margin-bottom: 0
+
+        &::before
+          content: ''
+          position: absolute
+          right: 0
+          top: 50%
+          width: 16px
+          height: 2px
+          border-radius: 5px
+          background-color: $color-blue
+          transform: rotate(90deg) translateY(-50%)
+
+  &__people
+    &-tabs
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      row-gap: 7px
+      li
+        &:last-child
+          width: 150px
+
+    &-item
+      input
+        text-align: center
+        padding: 7px 0
+        height: 30px
+        color: $color-black
+        font-weight: 500
+        font-size: 12px
+        background-color: transparent
+        cursor: pointer
+        border: 1px solid $color-gray-4
+        border-radius: 40px
+        width: 73px
+
+      label
+        display: block
+
+
+
+      &.active
+        background-color: $color-blue
+        color: #fff
+
+  &__place-content
+    label
+      font-weight: 500
+      font-size: 12px
+      color: $color-black
+      align-items: center
+      display: flex
+      align-items: center
+
+      &:not(:last-child)
+        margin-bottom: 5px
+
+  &__button
+    margin-top: 44px
+    width: 100%
+    margin-bottom: 12px
+
+    &-reset
+      border: none
+      cursor: pointer
+      font-weight: 500
+      font-size: 12px
+      position: relative
+      background: transparent
+      transform: translateX(-50%)
+      left: 50%
+
+      &::before
+        content: ''
+        position: absolute
+        width: 14px
+        height: 14px
+        top: 50%
+        left: -6px
+        transform: translate(-50%, -50%)
+        background: transparent url('../images/tour/close.svg') no-repeat center/ cover
+
+.slider
+  position: relative
+  z-index: 1
+  height: 3px
+
+  & > .track
+    position: absolute
+    z-index: 1
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: $color-gray-D
+    border-radius: 5px
+
+  & > .range
+    position: absolute
+    z-index: 2
+    left: 25%
+    right: 25px
+    top: 0
+    bottom: 0
+    border-radius: 5px
+    background-color: $color-blue
+
+  & > .thumb
+    position: absolute
+    z-index: 3
+    width: 15px
+    height: 15px
+    background-color: #fff
+    border: 1px solid $color-gray-D
+    border-radius: 50%
+
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      background-color: $color-blue
+      transform: translate(-50%, -50%)
+      width: 7px
+      height: 7px
+      border-radius: 50%
+
+    &.left
+      left: 25%
+      transform: translate(-13.5px, -7px)
+
+    &.right
+      right: 25%
+      transform: translate(13.5px, -7px)
+
+
+input[type=range]
+  position: absolute
+  pointer-events: none
+  -webkit-appearance: none
+  z-index: 2
+  height: 3px
+  width: 100%
+  opacity: 0
+  margin: 0
+  transform: scale(1.2)
+
+  &::-webkit-slider-thumb
+    pointer-events: all
+    width: 15px
+    height: 15px
+    border-radius: 0
+    border: 0 none
+    background-color: red
+    -webkit-appearance: none
+
+#moreTen
+  width: 100%

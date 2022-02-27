@@ -1,0 +1,80 @@
+html
+  font-size: 16px
+
+body
+  background: linear-gradient(360deg, #21201F 0%, #44403F 100%)
+  color: #fff
+  min-height: 100vh
+  @extend %gilroy-regular
+
+a
+  color: #fff
+
+
+[class*=container]
+  max-width: 1330px
+  margin: 0 auto
+  padding: 0 15px
+
+
+[class*=container-big]
+  max-width: 1470px
+  margin: 0 auto
+  padding: 0 15px
+
+.add-button,
+.minus-button
+  position: relative
+  width: 62px
+  height: 44px
+
+  &::before
+    position: absolute
+    content: ''
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #ffffff
+    height: 3px
+    width: 18px
+    border-radius: 20px
+
+.add-button
+  &::after
+    position: absolute
+    content: ''
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(90deg)
+    background-color: #ffffff
+    height: 3px
+    width: 18px
+    border-radius: 20px
+
+.logo
+  &__wrapper
+    width: 100px
+
+.scroll-gradient
+  height: 260px
+  position: fixed
+
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 999
+  background: linear-gradient(rgba(59, 56, 55, 0), rgba(59, 56, 55, 1))
+
+button:not(.no-hover)
+  transition: 200ms ease-in-out 0s
+  &:hover
+    box-shadow: 0 5px 10px 0 rgba(114, 163, 121, 0.7)
+
+
+
+
+
+
+
+
+

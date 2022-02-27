@@ -1,0 +1,152 @@
+.map
+  &__wrapper
+    position: relative
+    display: flex
+    align-content: center
+
+  iframe
+    pointer-events: none
+    filter: grayscale(100%) invert(100%)
+
+.contacts
+  background: #2E2B2C
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.15)
+  border-radius: 15px
+  width: 525px
+  height: 405px
+  padding: 25px 42px 25px 43px
+  position: absolute
+  left: 0
+  top: 0
+  transform: translateY(-110%)
+
+  &__title
+    text-transform: uppercase
+    font-size: 30px
+    font-weight: 700
+    color: #ffffff
+    padding-bottom: 26px
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: -1px
+      height: 1px
+      width: 100%
+      left: 0
+      right: 0
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+
+
+  &__address,
+  &__email
+    padding-left: 27px
+
+    &-title
+      margin-top: 15px
+      color: #cfcfcf
+      font-size: 14px
+      margin-bottom: 10px
+      margin-left: 15px
+
+    &-text
+      color: #ffffff
+      font-weight: 600
+      line-height: 110%
+
+    &-block
+      display: flex
+      align-items: center
+      margin-left: -15px
+
+  &__email
+    position: relative
+    padding-bottom: 28px
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: -1px
+      height: 1px
+      width: 100%
+      left: 0
+      right: 0
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+
+
+  &__order
+    margin-top: 17px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__phone
+    font-size: 23px
+    font-weight: bold
+    color: #ffffff
+
+    &-block
+      p
+        font-size: 13px
+        color: #cfcfcf
+
+
+  &__button
+    background: $color-accent-gradient
+    color: #ffffff
+    border: none
+    border-radius: 10px
+    cursor: pointer
+    font-size: 13px
+    font-weight: bold
+    @extend %proxima-nova
+    padding: 22px 30px
+    margin-bottom: 30px
+
+  &__socials
+    display: flex
+    align-items: center
+    max-width: 60%
+    margin: 0 auto
+
+    &-title
+      font-weight: 600
+      margin-right: 26px
+
+    &-items
+      display: flex
+      align-items: center
+      justify-content: center
+
+    &-item
+      margin-right: 10px
+
+.here
+  position: absolute
+  color: #fff
+  font-weight: 800
+  background: $color-accent-gradient
+  width: 98px
+  height: 98px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  flex-direction: column
+  text-align: center
+  align-items: center
+  bottom: 100px
+  left: 50%
+
+  &::after
+    position: absolute
+    content: ""
+    bottom: -13px
+    left: 50%
+    right: 0
+    width: 0
+    height: 0
+    transform: translateX(-50%)
+    border-left: 27px solid transparent
+    border-right: 27px solid transparent
+    border-top: 21px solid #6D9B74

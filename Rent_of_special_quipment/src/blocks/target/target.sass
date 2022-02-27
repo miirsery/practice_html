@@ -1,0 +1,45 @@
+.target
+  @media (max-width: 860px)
+    &.mobile
+      display: none
+
+  &__wrapper
+    display: flex
+    align-items: center
+
+  &__info
+    margin-left: 100px
+
+  &__title
+    margin-bottom: 100px
+
+  &__subtitle
+    text-transform: uppercase
+    @include font(26px, 34px)
+    font-weight: bold
+    max-width: 650px
+    margin-bottom: 50px
+
+  &__text
+    p
+      font-weight: 500
+      @include font(20px, 26px)
+      margin-bottom: 20px
+
+  &__button
+    background: $color-accent
+    border-radius: 2px
+    color: $color-dark
+    text-transform: uppercase
+    letter-spacing: 0.15em
+    font-weight: 800
+    padding: 25px 72px
+
+    &::after
+      display: none
+
+    &:checked
+      background-color: $color-dark
+
+      &::after
+        display: block

@@ -1,0 +1,69 @@
+html
+  font-size: 16px
+
+body
+  background-color: #fff
+  color: #000
+  font-family: 'Montserrat', serif
+
+a
+  color: #000
+  display: block
+
+[class*=container]
+  max-width: 1440px
+  margin: 0 auto
+  padding: 0 100px
+  @media (max-width: 1366px)
+    padding: 0 80px
+  @media (max-width: 960px)
+    padding: 0 40px
+
+.main
+  position: relative
+
+.logo
+  width: 108px
+  height: 35px
+
+  svg
+    width: 100%
+    height: 100%
+
+.button
+  background: $color-gradient
+  color: #ffffff
+  text-transform: uppercase
+  letter-spacing: 3px
+  border-radius: 10px
+
+.title
+  color: #333333
+  font-size: calc(24px + 12 * (100vw / 1440))
+  font-weight: 600
+  text-align: center
+
+.swiper-slide
+  text-align: center
+  background-position: center
+  background-size: cover
+
+  img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.swiper-button-prev::after,
+.swiper-button-next::after
+  content: '' !important
+
+.custom-button-prev,
+.custom-button-next
+  background: #ffffff
+  width: 73px
+  height: 73px
+  border-radius: 50%
+
+.tall
+  height: auto !important

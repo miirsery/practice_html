@@ -1,0 +1,45 @@
+.first-view
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: calc(100vh - 87px)
+
+  &-ex__title
+    font-weight: bold
+    font-size: clamp(36px, 5vw, 72px)
+    margin-top: 60px
+    padding-bottom: 60px
+  &__content
+    max-width: 723px
+
+    &-button
+      margin-top: 80px
+      position: relative
+
+      &::after
+        content: ''
+        position: absolute
+        right: 50px
+        top: 50%
+        transform: translateY(-50%)
+        width: 15px
+        height: 8px
+        background: center/ cover no-repeat url('../images/underhero/arrow.svg')
+
+    &-title
+      font-weight: bold
+      font-size: clamp(36px, 5vw, 72px)
+
+    &-subtitle
+      color: $color-yellow
+      text-align: right
+
+      &-next
+        font-weight: 900
+        font-size: clamp(72px, 8vw, 96px)
+        color: transparent
+        -webkit-text-fill-color: transparent
+        -webkit-text-stroke-width: 1px
+        -webkit-text-stroke-color: white
+

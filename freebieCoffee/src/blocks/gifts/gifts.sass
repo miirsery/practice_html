@@ -1,0 +1,58 @@
+
+.gifts-bg
+  background-color: $color-light-gray
+  width: 100%
+  height: 50rem
+  position: absolute
+  z-index: -1
+  left: -36%
+
+.tabs
+  display: flex
+
+  &__items
+    margin-left: 1px
+
+  &__block
+    position: relative
+    display: none
+
+    &-content
+      margin-left: -10%
+
+    &--active
+      display: flex
+
+    &-price
+      margin-bottom: 1.2rem
+
+    &-title
+      margin-bottom: 1rem
+
+    &-description
+      margin-bottom: 1.5rem
+
+    &-img img
+      margin-left: -50%
+
+
+  &__body
+    background-color: #fff
+    padding: 64px 30px 64px 0
+
+  &__btn
+    cursor: pointer
+    padding: 60px 35px
+    display: block
+    font-size: 1.9rem
+    font-weight: 900
+    color: #415167
+    background-color: $color-light-gray
+    opacity: .3
+
+    &--active
+      opacity: 1
+      color: $color-primary
+      background-color: #fff
+
+

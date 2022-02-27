@@ -1,0 +1,105 @@
+.item
+  &__content
+    display: flex
+    flex-direction: column
+    padding: 38px 0 25px 50px
+    width: 410px
+
+  &__body
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%)
+    border-radius: 10px
+    display: flex
+    max-height: 400px
+
+    &-img
+      width: 600px
+
+      img
+        width: 100%
+        object-fit: cover
+        border-radius: 10px
+
+  &__title
+    font-weight: 500
+    font-size: 25px
+    margin-bottom: 10px
+
+  &-back-btn
+    display: flex
+    align-items: center
+    border: none
+    background-color: transparent
+    cursor: pointer
+    margin-bottom: 28px
+
+    p
+      margin-left: 10px
+      font-weight: 600
+
+  &__text
+    color: rgba(207, 207, 207, 1)
+    font-size: 14px
+    line-height: 1.2
+
+  &__weight
+    color: #ffffff
+    font-size: 13px
+    margin-bottom: 22px
+    margin-top: 113px
+
+  &__cart
+    display: block
+    width: 145px
+
+    &-block
+      display: flex
+      margin-bottom: 30px
+      align-items: center
+
+    &-wrapper
+      background: $color-accent-gradient
+      display: flex
+      align-items: center
+      border-radius: 10px
+
+    &-title
+      font-weight: 600
+      font-size: 14px
+      border-right: 1px solid rgba(255, 255, 255, 0.3)
+      margin-right: 12px
+      padding: 18px 20px 18px 24px
+
+    &-img
+      padding-right: 16px
+
+    &-price
+      margin-left: 25px
+      font-weight: bold
+      font-size: 25px
+
+  &__specifications
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: flex-start
+
+    &::after
+      content: ''
+      position: absolute
+      width: 130%
+      height: 1px
+      background: rgba(255, 255, 255, 0.1)
+      top: 50%
+      left: -50px
+
+  &__specification
+    margin-right: 50px
+
+    &-title
+      margin-bottom: 10px
+      font-weight: 300
+      font-size: 12px
+
+    &-count
+      font-size: 12px
+      font-weight: 500

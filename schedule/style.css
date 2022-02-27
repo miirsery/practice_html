@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li[class],
+ul[class] {
+  list-style: none;
+}
+body {
+  margin-top: 10px;
+  color: #fff;
+}
+.content {
+  background-color: #3494e4;
+  max-width: 180px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.header {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 100, 164, 0.7) -26.67%,
+    rgba(10, 100, 164, 0) 99.46%
+  );
+  padding: 5px 0 0.5px 5px;
+  border-radius: 5px;
+}
+.header__content {
+  margin-bottom: 3px;
+  font-size: 8px;
+}
+.header__content span {
+  font-family: "Comic CAT";
+  font-size: 8px;
+  line-height: 9px;
+  position: relative;
+  margin-right: 5px;
+}
+.header__content span:first-child::after {
+  content: "|";
+  position: absolute;
+  right: -5px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px 5px 5px;
+}
+.main__ids {
+  font-family: "Comic CAT";
+}
+.main__id {
+  font-size: 8px;
+  line-height: 9px;
+}
+.main__things {
+  width: 90%;
+}
+.main__thing {
+  font-family: "Mustica Pro SemBd";
+  font-size: 6px;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.7);
+}
+.auditorium__thing {
+  font-size: 6px;
+  line-height: 7px;
+  padding: 2px 0 0px 0;
+  margin-left: -24px;
+  font-family: "Comic CAT";
+}
+@font-face {
+  font-family: "Comic CAT";
+  src: url("./fonts/Comic_CAT.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Mustica Pro SemBd";
+  src: url("./fonts/MusticaproSemibold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}

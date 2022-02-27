@@ -1,0 +1,45 @@
+.basebody
+  margin-top: -6rem
+
+  &__title
+    position: relative
+    color: $color-primary
+    font-size: 3.5rem
+    font-weight: 900
+    line-height: 130%
+    max-width: 30%
+    bottom: 0
+    span
+      background-color: $color-accent
+      color: #fff
+      padding: 10px 15px
+      margin-left: -15px
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    min-height: 100vh
+    height: 100vh
+
+
+.aside
+  background-color: $color-primary
+  padding: 15rem 8rem 0 5rem
+  margin-top: -15rem
+  margin-right: -16rem
+  &__title
+    font-size: 1rem
+    font-weight: bold
+    color: $color-light-gray
+    margin-bottom: 1.5rem
+  &__menu
+    display: flex
+    flex-direction: column
+
+  &__item:not(:last-child)
+    margin-bottom: 1rem
+
+  &__link
+    font-weight: 300
+    color: $color-light-gray
+    line-height: 150%

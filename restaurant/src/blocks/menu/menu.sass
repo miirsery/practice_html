@@ -1,0 +1,83 @@
+.menu
+  min-height: 100vh
+
+  &__w
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+  &__title
+    color: #fff
+    font-size: 54px
+    margin: 0 auto 140px auto
+    padding-top: 100px
+    text-align: center
+
+  &__wrapper
+    min-height: 100vh
+    background: center/ cover no-repeat url('../images/bg-menu.jpg')
+
+  &__menu
+    display: flex
+    justify-content: space-between
+    @media (max-width: 425px)
+      flex-direction: column
+
+  &__item
+    height: 510px
+    width: 350px
+    background-color: #fff
+    padding: 80px 60px 30px 60px
+    position: relative
+    text-align: center
+    @media (max-width: 1335px)
+      &.two
+        margin-right: 3rem
+      &.three
+        display: none
+    @media (max-width: 425px)
+      width: 290px
+      &.two
+        display: none
+
+    &-recommended
+      position: absolute
+      left: 0
+      top: 0
+      color: #000
+      padding: 7px 11px 11px 11px
+      background-color: $color-accent-dark
+
+    &-price
+      margin-bottom: 18px
+      position: relative
+
+    &-number
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      background: #D67E34
+      border: 7px solid #FFFFFF
+      color: #fff
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 30px
+
+    &-title
+      color: #000
+      font-size: 26px
+      margin-bottom: 18px
+
+    &-subtitle
+      color: #000
+
+    &-button
+      margin-top: 20px
+      color: #fff
+      background-color: $color-accent-dark
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25)
+      padding: 14px 0

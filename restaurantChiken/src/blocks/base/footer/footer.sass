@@ -1,0 +1,41 @@
+.footer
+  padding-top: 26px
+  background: linear-gradient(to bottom right, rgba(33, 31, 32, 1), rgba(68, 64, 63, 1))
+
+  &__wrapper
+    display: flex
+    align-items: center
+
+  &__info
+    display: flex
+    flex-direction: column
+    max-width: 210px
+    margin-right: 86px
+
+    a
+      display: block
+      color: #ffffff
+      font-weight: 500
+      font-size: 14px
+      padding-bottom: 4px
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+
+    &:not(:last-child)
+      margin-bottom: 2rem
+
+
+  &__copy
+    font-weight: 500
+    font-size: 12px
+    line-height: 14px
+    color: #cfcfcf
+    margin-bottom: 7px
+
+  &__menu
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__item
+    &:not(:last-child)
+      margin-right: clamp(10px, 15vw, 16px)

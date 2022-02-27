@@ -1,0 +1,63 @@
+html
+  font-size: 16px
+
+body
+  background-color: #fff
+  color: $color-primary
+  @extend %montserrat-regular
+  max-width: 1400px
+  margin: 0 auto
+
+a
+  color: #fff
+  text-decoration: none
+
+[class*='container']
+  max-width: 1180px
+  margin: 0 auto
+  padding: 0 15px
+
+.first-view
+  min-height: 100vh
+  height: 100vh
+  background: -8rem top/ contain no-repeat url('../images/bg-first-view.jpg')
+
+.title
+  text-align: center
+  color: $color-primary
+  font-weight: 900
+  font-size: 1.9rem
+
+.subtitle
+  text-align: center
+  color: $color-primary
+  font-weight: 600
+  font-size: 1.2rem
+  margin-bottom: 0.5rem
+
+.product
+  &__price
+    font-weight: 600
+    font-size: 1.4rem
+    color: $color-accent
+
+  &__title
+    font-weight: bold
+    font-size: 1.5rem
+    color: #232C38
+
+  &__description
+    font-weight: 30
+    color: $color-dark-gray
+
+  &__buy
+    font-weight: bold
+    text-align: center
+    color: #f9fbff
+    padding: 8px 15px
+    background-color: $color-accent
+    border-radius: 19px
+
+  &__more
+    font-weight: bold
+    color: $color-accent

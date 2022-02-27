@@ -1,0 +1,43 @@
+html
+  font-size: 16px
+
+body
+  @extend %montserrat-regular
+  overflow-x: hidden
+
+a
+  color: #fff
+
+[class*="container"]
+  max-width: 1140px
+  margin: 0 auto
+  padding: 0 15px
+
+button
+  border: none
+  background-color: transparent
+  cursor: pointer
+
+.logo
+  background: center / cover no-repeat url('../images/logo.svg')
+  width: 16rem
+  height: 2rem
+
+.titles
+  color: $color-titles
+  font-weight: bold
+  font-size: 2.5rem
+  line-height: math.div(46px, 36px)
+
+.text
+  color: $color-text
+  line-height: math.div(26px, 16px)
+
+.info-button
+  font-weight: 700
+  color: $color-gray
+  font-size: 1rem
+  text-decoration: underline
+
+  &--active
+    color: $color-active

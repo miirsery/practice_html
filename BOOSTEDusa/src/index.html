@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+@@include('./blocks/header/header.html')
+<div class="welcome">
+    <div class="welcome first-view__container-big">
+        @@include('./blocks/first-view/first-view.html')
+    </div>
+    @@include('./blocks/partners/partners.html')
+</div>
+@@include('./blocks/looking/looking.html')
+@@include('./blocks/electric/electric.html')
+@@include('./blocks/boosted-rev/boosted-rev.html')
+@@include('./blocks/shop/shop.html')
+@@include('./blocks/videos/videos.html')
+@@include('./blocks/accessories/accessories.html')
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 7,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+<script src="./scripts/main.js"></script>
+</body>
+
+</html>

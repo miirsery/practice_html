@@ -1,0 +1,39 @@
+.about
+  position: relative
+  margin-top: -4rem
+  margin-bottom: 10rem
+  @media (max-width: 1240px)
+    max-width: 90%
+    margin: -4rem auto 10rem auto
+
+  &__items
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__item
+    padding: 35px 15px
+    max-width: 360px
+    height: 330px
+    background-color: #fff
+    @media (max-width: 1240px)
+      padding: 25px 5px
+      max-width: 450px
+      margin: 0 auto
+    @media (max-width: 1190px)
+      max-width: 340px
+      padding: 25px 5px
+
+  &__title
+    font-size: 1.6rem
+    color: #2c2c2c
+    margin-bottom: 20px
+
+    span
+      color: #BC9060
+
+  &__text
+    text-align: center
+    color: #656363
+    font-size: 1.6rem
+    line-height: 1.15
