@@ -1,0 +1,98 @@
+.info
+  margin-top: 60px
+  margin-bottom: 5rem
+  @media screen and (max-width: 568px)
+    margin-top: 18rem
+
+  &__menu
+    max-width: 60%
+    @media screen and (max-width: 660px)
+      max-width: 80%
+
+  &__wrapper
+    background-color: $color-gray
+    border-radius: 5px
+    padding: 60px 0 60px 125px
+    position: relative
+    @media screen and (max-width: 768px)
+      padding: 40px 0 60px 85px
+    @media screen and (max-width: 660px)
+      padding: 40px 0 60px 65px
+
+  &__circle-text
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(50%, -50%)
+    @media screen and (max-width: 1220px)
+      right: 100px
+    @media screen and (max-width: 1120px)
+      display: none
+
+
+  &__buy
+    display: flex
+    align-items: flex-end
+
+    a
+      margin-right: 35px
+
+  &__item
+    margin-bottom: 1.8rem
+    position: relative
+    font-size: 16px
+    letter-spacing: 0.04em
+    color: #F6FFF3
+    margin-left: 1.9rem
+    @include lh(16px, 21px)
+
+    &:last-child
+      &::before,
+      &::after
+        top: 10px
+
+    &::before
+      content: ''
+      position: absolute
+      left: -29px
+      top: 50%
+      transform: translateY(-50%)
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      background-color: $color-white
+
+    &::after
+      content: ''
+      position: absolute
+      left: -30px
+      top: 50%
+      transform: translateY(-50%)
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: transparent
+      border: 1px solid $color-white
+
+    &:last-child
+      margin-bottom: 1.8rem
+
+
+  &__price
+    display: flex
+    align-items: flex-end
+    font-size: 36px
+    @include lh(36px, 47px)
+    font-weight: bold
+    letter-spacing: 0.09em
+    color: $color-white
+    margin-right: -5px
+
+    p
+      font-size: 20px
+      margin-bottom: 3px
+      font-weight: bold
+      letter-spacing: 0.09em
+      color: $color-white
+
+

@@ -1,0 +1,22 @@
+.footer
+  background-color: $color-gray
+  flex: 0 0 auto
+
+  &__wrapper
+    display: flex
+    width: 100%
+    padding: 36px 15px
+
+  &__info
+    max-width: 285px
+    margin-right: 40px
+
+  p
+    &:nth-child(2)
+      max-width: 75%
+  p, a
+    font-size: 14px
+    color: rgba(246, 255, 243, 0.75)
+    margin-bottom: 15px
+    letter-spacing: 0.04em
+    @include lh(14px, 18px)

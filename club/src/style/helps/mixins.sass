@@ -1,0 +1,12 @@
+@use 'sass:math'
+
+@mixin lh($font-size, $line-height)
+  line-height: math.div($line-height, $font-size)
+
+@mixin setFont($font-size, $line-height)
+  font-size: $font-size
+  line-height: math.div($line-height, $font-size)
+
+@mixin font($font-size-min, $font-between, $font-size-max,$line-height)
+  font-size: calc(#{$font-size-min} + #{$font-between} * (100vw / 1120))
+  line-height: math.div($line-height, $font-size-max)
